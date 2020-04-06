@@ -6,3 +6,4 @@ git is a free software
 hello
 git is very good
 hahahaha
+#!/usr/bin/env python
