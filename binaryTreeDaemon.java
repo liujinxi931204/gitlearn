@@ -74,15 +74,6 @@ class BinaryTree{
         }
     }
     
-    public void preOrder(treeNode node){
-        if(node==null){
-            return;
-        }
-        system.out.println(node);
-        preOrder(node.left);
-        preOrder(node.right);
-    }
-
     
     public void midOrder(treeNode node){
         Stack<treeNode> stack=new Stack<>();
@@ -97,15 +88,6 @@ class BinaryTree{
                 node=node.right;
             }
         }
-    }
-    
-    public void midOrder(treeNode node){
-        if(node==null){
-            return;
-        }
-        midOrder(node.left);
-        system.out.println(node);
-        mieOrder(node.right);
     }
     
 
