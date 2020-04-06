@@ -59,19 +59,28 @@ class BinaryTree{
         this.root=root;
     }
 
+    #public void preOrder(treeNode node){
+    #    Stack<treeNode> stack=new Stack<>();
+    #    while(node!=null || !stack.isEmpty()) {
+    #        while(node!=null){
+    #            System.out.println(node.getData());
+    #            stack.push(node);
+    #            node=node.left;
+    #        }
+    #        if(!stack.isEmpty()){
+    #            node=stack.pop();
+    #            node=node.right;
+    #        }
+    #    }
+    #}
+
     public void preOrder(treeNode node){
-        Stack<treeNode> stack=new Stack<>();
-        while(node!=null || !stack.isEmpty()) {
-            while(node!=null){
-                System.out.println(node.getData());
-                stack.push(node);
-                node=node.left;
-            }
-            if(!stack.isEmpty()){
-                node=stack.pop();
-                node=node.right;
-            }
+        if(node==null){
+	    return;
         }
+        system.out.println(node);
+        preOrder(node.left);
+        preOrder(node.right);
     }
 
     public void midOrder(treeNode node){
