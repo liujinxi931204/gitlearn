@@ -73,7 +73,7 @@ class BinaryTree{
             }
         }
     }
-
+    
     
     public void midOrder(treeNode node){
         Stack<treeNode> stack=new Stack<>();
