@@ -83,19 +83,28 @@ class BinaryTree{
         preOrder(node.right);
     }
 
+    #public void midOrder(treeNode node){
+    #    Stack<treeNode> stack=new Stack<>();
+    #    while(node!=null|| !stack.isEmpty()) {
+    #        while (node!=null){
+    #            stack.push(node);
+    #            node=node.left;
+    #        }
+    #        if(!stack.isEmpty()){
+    #            node=stack.pop();
+    #            System.out.println(node.getData());
+    #            node=node.right;
+    #        }
+    #    }
+    #}
+    
     public void midOrder(treeNode node){
-        Stack<treeNode> stack=new Stack<>();
-        while(node!=null|| !stack.isEmpty()) {
-            while (node!=null){
-                stack.push(node);
-                node=node.left;
-            }
-            if(!stack.isEmpty()){
-                node=stack.pop();
-                System.out.println(node.getData());
-                node=node.right;
-            }
+        if(node==null){
+            return;
         }
+        midOrder(node.left);
+        system.out.println(node);
+        midOrder(node.right);
     }
 
     public void postOrder(treeNode node){
