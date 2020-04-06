@@ -8,3 +8,6 @@ git is very good
 hahahaha
 git is very goodi
 #!/usr/bin/env python
+
+print ("hi world")
+print ("hello world")
