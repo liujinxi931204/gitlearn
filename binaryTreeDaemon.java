@@ -90,6 +90,15 @@ class BinaryTree{
         }
     }
     
+    public void midOrder(treeNode node){
+        if(node==null){
+            return;
+        }
+        midOrder(node.left);
+        system.out.println(node);
+        mieOrder(node.right);
+    }
+    
 
     public void postOrder(treeNode node){
         int LEFT=1;
