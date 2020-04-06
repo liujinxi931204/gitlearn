@@ -73,6 +73,15 @@ class BinaryTree{
             }
         }
     }
+    
+    public void preOrder(treeNode node){
+        if(node==null){
+            return;
+        }
+        system.out.println(node);
+        preOrder(node.left);
+        preOrder(node.right);
+    }
 
     
     public void midOrder(treeNode node){
